@@ -1,0 +1,26 @@
+<annotation>
+	<folder>collectedImages</folder>
+	<filename>iloveyou6358ecd9-4e01-11ec-baa0-80b65553305d.jpg</filename>
+	<path>C:\Users\arnav\Documents\Python\intership\InternshipProject\HandGesture\Tensorflow\workspace\images\collectedImages\iloveyou6358ecd9-4e01-11ec-baa0-80b65553305d.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>I Love You</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>97</xmin>
+			<ymin>206</ymin>
+			<xmax>289</xmax>
+			<ymax>440</ymax>
+		</bndbox>
+	</object>
+</annotation>
