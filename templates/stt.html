@@ -15,11 +15,13 @@
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
         height: 100vh;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         padding: 40px 70px;
         font-size: 50px;
+    }
+    p {
+        margin: 0 auto;
     }
     .back-btn {
       font-size: 24px;
@@ -43,4 +45,10 @@
       </div>
     <p>{{text}}</p>
 </body>
+<script>
+    const backButton = document.querySelector('.back-btn');
+    backButton.addEventListener('click', function () {
+      window.location.href = "/"
+    });
+  </script>
 </html>
