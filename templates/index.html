@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a35cb60d7c.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <style>
@@ -13,37 +14,72 @@
         text-align: center;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
-    /* .card-group{
-        height: 100%;
-    } */
+    .card-group-nb {
+      display: flex;
+    }
+
+    .card {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      margin-right: 20px;
+      width:280px;
+      height:280px;
+      border-radius: 10px;
+
+      transition: 0.25s;
+      background-color: white;
+      box-shadow: 0 20px 80px hsla(0, 0%, 0%, 0.08);
+      border: none;
+    }
+    .card-icon {
+      font-size: 64px;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+    }
+    .card-body{
+      flex: unset;
+      color: black;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 40px hsla(0, 0%, 0%, 0.08);
+    }
+    .card-title {
+      margin-bottom: 20px;
+    }
 </style>
 <body>
-    <div class="card-group">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+    <div class="card-group-nb">
+        <div class="card mb-3">
+          <img src="https://img.icons8.com/ios-glyphs/30/undefined/speech-to-text.png"/>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Speech to Text</h5>
+            <p class="card-text"><a href="{% url 'stt' %}" class="btn btn-primary">Click Here to Speak</a></p>
           </div>
         </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card mb-3">
+          <img src="https://img.icons8.com/fluency-systems-regular/48/undefined/speech-to-text.png"/>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Text To Speech</h5>
+            <p class="card-text"><a href="{% url 'tts' %}" class="btn btn-primary">Click Here to Enter Text</a></p>
           </div>
         </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card mb-3">
+          <!-- <img src="https://static.thenounproject.com/png/497-200.png" class="card-img-top" alt="..."> -->
+          <!-- <i class="card-icon fa-solid fa-hands-asl-interpreting"></i> -->
+          <img src="https://img.icons8.com/ios-glyphs/30/undefined/sign-language-interpretation.png"/>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Sign Language Detection</h5>
+            <p class="card-text"><a href="{% url 'tts' %}" class="btn btn-primary">Click Here to Detect ASL</a></p>
           </div>
-        <div>
+        </div>
       </div>
 </body>
 </html>
